@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '@assets/images/Hero.png'
-import Trace from '@assets/images/TraceHero.png'
-import Unison from '@assets/images/UnisonHero.png'
+import Trace from '@assets/images/TraceImage.png'
+import Unison from '@assets/images/UnisonImage.png'
 
 export const HeroImage = () => {
   return (

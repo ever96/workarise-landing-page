@@ -1,6 +1,12 @@
+import { ComparePlans } from "@components/ComparePlans/ComparePlans.component"
+import { FAQ } from "@components/FAQ/FAQ.component"
+
 const Pricing = () => {
   return (
-    <div>Pricing</div>
+    <main>
+      <ComparePlans />
+      <FAQ />
+    </main>
   )
 }
 

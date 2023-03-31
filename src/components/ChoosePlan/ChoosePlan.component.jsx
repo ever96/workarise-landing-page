@@ -5,7 +5,7 @@ import virtuosoFront from '@assets/icons/virtuosoFrontIcon.png'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 
-export const ChoosePlan = () => {
+export const ChoosePlan = ({section}) => {
   const featureIncludedIcon = <CheckCircleOutlineIcon sx={{color: "green.main", fontSize: "1.3rem"}} />
 
   const featureNotIncludedIcon = <CheckCircleOutlineIcon sx={{color: "#55555540", fontSize: "1.3rem"}} />
@@ -57,9 +57,13 @@ export const ChoosePlan = () => {
   ]
 
   return (
-    <section className='w-full flex flex-col items-center gap-4 py-10 px-4 lg:pt-32 lg:gap-8'>
-      <h2 className='text-2xl font-extrabold md:text-3xl lg:text-6xl'>Choose Your Plan</h2>
-      <p className='font-bold md:text-lg lg:text-2xl'>Get the plan that fits your needs</p>
+    <section className={`w-full flex flex-col items-center gap-4 px-4 ${section === "home" ? 'py-10 lg:pt-32' : 'pt-6 lg:pt-10'}  lg:gap-8`}>
+      {section === "home" && (
+        <>
+          <h2 className='text-2xl font-extrabold md:text-3xl lg:text-6xl'>Choose Your Plan</h2>
+          <p className='font-bold md:text-lg lg:text-2xl'>Get the plan that fits your needs</p>
+        </>
+      )}
       <div className='flex items-center justify-center gap-2'>
         <p className='font-bold lg:text-xl'>Monthly</p>
         <Switch color='green' className='text-primary-green'  />
@@ -67,7 +71,7 @@ export const ChoosePlan = () => {
       </div>
       <div className='w-full flex items-center gap-5 snap-x overflow-x-auto pt-3 pb-10 px-5 overflow-y-hidden lg:justify-evenly'>
         {plans.map((plan, index) => (
-          <article key={`${plan.title}/${index}`} className='min-w-[288px] max-w-[310px] flex flex-col justify-center gap-5 overflow-hidden shrink-0 shadow-md rounded-2xl py-10 px-8 lg:gap-7 lg:max-w-[330px]'>
+          <article key={`${plan.title}/${index}`} className={`min-w-[288px] max-w-[310px] ${section === "comparePlans" ? 'bg-white' : ''} flex flex-col justify-center gap-5 overflow-hidden shrink-0 shadow-md rounded-2xl py-10 px-8 lg:gap-7 lg:max-w-[330px]`}>
             <div className='flex gap-4'>
               <img src={plan.icon} alt="" />
               <h3 className='text-2xl font-bold md:text-3xl lg:text-4xl'>{plan.title}</h3>

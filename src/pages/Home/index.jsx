@@ -1,19 +1,19 @@
-import { Hero } from "@components/Hero/Hero.component"
+import { HomeHero } from "@components/HomeHero/HomeHero.component"
 import { WhatWeOffer } from "@components/WhatWeOffer/WhatWeOffer.component"
 import { MainFeatures } from "@components/MainFeatures/MainFeatures.component"
-import { WhoWeAre } from "@components/WhoWeAre/WhoWeAre.component"
+import { HomeWhoWeAre } from "@components/HomeWhoWeAre/HomeWhoWeAre.component"
 import { VideoHome } from "@components/VideoHome/VideoHome.component"
 import { ChoosePlan } from "@components/ChoosePlan/ChoosePlan.component"
 
 const Home = () => {
   return (
     <main>
-      <Hero />
+      <HomeHero />
       <WhatWeOffer />
       <MainFeatures />
-      <WhoWeAre />
+      <HomeWhoWeAre />
       <VideoHome />
-      <ChoosePlan />
+      <ChoosePlan section="home" />
     </main>
   )
 }

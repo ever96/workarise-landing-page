@@ -2,7 +2,7 @@ import Trace from '@assets/images/TraceImage.png'
 import Virtuoso from '@assets/images/VirtuosoImage.png'
 import Unison from '@assets/images/UnisonImage.png'
 
-export const WhoWeAre = () => {
+export const HomeWhoWeAre = () => {
 
   const teamCharacteristics = [
     {

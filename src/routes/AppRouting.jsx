@@ -3,7 +3,8 @@ import Home from '@pages/Home';
 import Pricing from '@pages/Pricing';
 import AboutUs from '@pages/AboutUs';
 import Contact from '@pages/Contact';
-import { Header } from '../components/Header/Header.component';
+import { Header } from '@components/Header/Header.component';
+import { Footer } from '@components/Footer/Footer.component';
 
 const AppRouting = () => {
   return (
@@ -35,6 +36,7 @@ const AppRouting = () => {
           }
         />
       </Routes>
+      <Footer />
     </>
   )
 }

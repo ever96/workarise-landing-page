@@ -21,10 +21,10 @@ export const Header= () => {
   }, [device])
 
   return (
-    <header className='w-full h-[89px] shadow-md'>
+    <header className='w-full shadow-md'>
       <nav className='w-full flex justify-between items-center px-5 py-4'>
         <picture>
-          <img src={Logo} alt="Workarise Logo" />
+          <img className="w-[130px] lg:w-[160px]" src={Logo} alt="Workarise Logo" />
         </picture>
         <button 
           onClick={openMobileMenu}

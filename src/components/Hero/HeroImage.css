@@ -1,0 +1,195 @@
+.trace{
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  right: 0; 
+  max-width: 80px;
+  z-index: 30;
+}
+
+.unison{
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  max-width: 100px;
+  z-index: 20;
+}
+
+.projects{
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+
+.calendar{
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+
+.team{
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+
+.tasks{
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .trace{
+    max-width: 120px;
+  }
+
+  .unison{
+    max-width: 120px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .trace{
+    min-width: 130px;
+    max-width: 150px;
+    top: -200px;
+    right: -170px;
+  }
+
+  .unison{
+    max-width: 250px;
+    left: -210px;
+    bottom: -150px;
+  }
+
+  .projects{
+    display: block;
+    top: -70px;
+    left: -210px;
+    max-width: 270px;
+  }
+
+  .calendar{
+    display: block;
+    top: -70px;
+    right: -200px;
+    max-width: 270px;
+  }
+
+  .team{
+    display: block;
+    bottom: -40px;
+    right: -190px;
+    max-width: 250px;;
+  }
+
+  .tasks{
+    display: block;
+    bottom: -70px;
+    left: -200px;
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .trace{
+    min-width: 170px;
+    max-width: 190px;
+    top: -210px;
+    right: -200px;
+  }
+
+  .unison{
+    max-width: 280px;
+    left: -240px;
+
+  }
+
+  .projects{
+    max-width: 320px;
+    left: -260px;
+  }
+
+  .calendar{
+    max-width: 320px;
+    right: -240px;
+  }
+
+  .team{
+    max-width: 280px;
+    bottom: -35px;
+    right: -220px;
+  }
+
+  .tasks{
+    bottom: -60px;
+    left: -220px;
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1230px){
+  .trace{
+    right: -230px;
+  }
+
+  .unison{
+    max-width: 320px;
+    left: -290px;
+    bottom: -185px;
+  }
+
+  .projects{
+    max-width: 350px;
+    left: -280px;
+  }
+
+  .calendar{
+    max-width: 360px;
+    right: -280px;
+  }
+
+  .team{
+    max-width: 310px;
+    right: -245px;
+  }
+}
+
+@media screen and (min-width: 1330px){
+  .trace{
+    max-width: 240px;
+    right: -290px;
+    top: -250px;
+  }
+
+  .unison{
+    max-width: 350px;
+    left: -380px;
+    bottom: -185px;
+  }
+
+  .projects{
+    max-width: 380px;
+    left: -300px;
+  }
+
+  .calendar{
+    max-width: 400px;
+    right: -330px;
+  }
+
+  .team{
+    max-width: 340px;
+    right: -265px;
+  }
+
+  .tasks{
+    bottom: -60px;
+    left: -240px;
+    max-width: 300px;
+  }
+}
+

@@ -1,9 +1,14 @@
 import { Switch } from '@mui/material'
 import stackFront from '@assets/icons/stackFrontIcon.png'
-import uniconFront from '@assets/icons/uniconFrontIcon.png'
+import unisonFront from '@assets/icons/unisonFrontIcon.png'
 import virtuosoFront from '@assets/icons/virtuosoFrontIcon.png'
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+
 
 export const ChoosePlan = () => {
+  const featureIncludedIcon = <CheckCircleOutlineIcon sx={{color: "green.main", fontSize: "1.3rem"}} />
+
+  const featureNotIncludedIcon = <CheckCircleOutlineIcon sx={{color: "#55555540", fontSize: "1.3rem"}} />
 
   const plans = [
     {
@@ -24,10 +29,10 @@ export const ChoosePlan = () => {
     {
       title: "Pro",
       description: "Professional experience with all but team features included.",
-      icon: stackFront,
+      icon: unisonFront,
       price: {
-        monthly: 9,
-        anually: 35,
+        monthly: 12,
+        anually: 10,
       },
       includedFeatures: [
         "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud"
@@ -37,30 +42,59 @@ export const ChoosePlan = () => {
       ]
     },
     {
-      title: "Pro",
-      description: "Professional experience with all but team features included.",
-      icon: stackFront,
+      title: "Team",
+      description: "Everything included from Free and Pro with Team features.",
+      icon: virtuosoFront,
       price: {
-        monthly: 9,
-        anually: 35,
+        monthly: 18,
+        anually: 15,
       },
       includedFeatures: [
-        "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud"
+        "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud", "Nisi ut aliquip", "Ad veniam"
       ],
-      notIncludedFeatures: [
-         "Nisi ut aliquip", "Ad veniam"
-      ]
+      notIncludedFeatures: [],
     }
   ]
 
   return (
-    <section className='w-full flex flex-col items-center gap-4 text-center py-10 px-4 lg:pt-32 lg:gap-8'>
+    <section className='w-full flex flex-col items-center gap-4 py-10 px-4 lg:pt-32 lg:gap-8'>
       <h2 className='text-2xl font-extrabold md:text-3xl lg:text-6xl'>Choose Your Plan</h2>
-      <p className='md:text-lg lg:text-2xl'>Get the plan that fits your needs</p>
+      <p className='font-bold md:text-lg lg:text-2xl'>Get the plan that fits your needs</p>
       <div className='flex items-center justify-center gap-2'>
-        <p>Monthly</p>
+        <p className='font-bold lg:text-xl'>Monthly</p>
         <Switch color='green' className='text-primary-green'  />
-        <p>Annually</p>
+        <p className='font-bold lg:text-xl'>Annually</p>
+      </div>
+      <div className='w-full flex items-center gap-5 snap-x overflow-x-auto pt-3 pb-10 px-5 overflow-y-hidden lg:justify-evenly'>
+        {plans.map((plan, index) => (
+          <article key={`${plan.title}/${index}`} className='min-w-[288px] max-w-[310px] flex flex-col justify-center gap-5 overflow-hidden shrink-0 shadow-md rounded-2xl py-10 px-8 lg:gap-7 lg:max-w-[330px]'>
+            <div className='flex gap-4'>
+              <img src={plan.icon} alt="" />
+              <h3 className='text-2xl font-bold md:text-3xl lg:text-4xl'>{plan.title}</h3>
+            </div>
+            <p className='font-medium leading-5 text-gray-600'>{plan.description}</p>
+            <div className='flex items-end gap-1'>
+              <span className='text-5xl font-semibold lg:text-7xl'>${plan.price.monthly}</span>
+              <p className='font-medium text-lg text-gray-500'>/monthly</p>
+            </div>
+            <p className='font-bold text-lg'>{plan.title} includes</p>
+            <ul className='flex flex-col gap-3'>
+              {plan.includedFeatures.map((feature, index) => (
+                <li key={`${feature}/${index}`} className='flex items-center gap-2'>
+                  {featureIncludedIcon}
+                  <p className='font-medium'>{feature}</p>
+                </li>
+              ))}
+              {plan.notIncludedFeatures && plan.notIncludedFeatures.map((feature, index) => (
+                <li key={`${feature}/${index}`} className='flex items-center gap-2'>
+                  {featureNotIncludedIcon}
+                  <p className='font-medium text-[#55555540]'>{feature}</p>
+                </li>
+              ))}              
+            </ul>
+            <button className='w-[60%] mx-auto p-2 rounded-xl bg-primary-black  text-white text-lg font-bold lg:w-[90%] lg:text-xl'>Get {plan.title} Plan</button>
+          </article>
+        ))}
       </div>
     </section>
   )

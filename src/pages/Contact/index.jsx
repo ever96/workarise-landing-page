@@ -1,6 +1,12 @@
+import { FormContact } from "@components/FormContact/FormContact.component"
+import { SocialMedia } from "@components/SocialMedia/SocialMedia.component"
+
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <main>
+      <FormContact />
+      <SocialMedia />
+    </main>
   )
 }
 

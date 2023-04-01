@@ -21,7 +21,7 @@ export const Header= () => {
   }, [device])
 
   return (
-    <header className='w-full shadow-md'>
+    <header className='w-full shadow-sm'>
       <nav className='w-full flex justify-between items-center px-5 py-4'>
         <picture>
           <img className="w-[130px] lg:w-[160px]" src={Logo} alt="Workarise Logo" />

@@ -3,9 +3,13 @@ import stackFront from '@assets/icons/stackFrontIcon.png'
 import unisonFront from '@assets/icons/unisonFrontIcon.png'
 import virtuosoFront from '@assets/icons/virtuosoFrontIcon.png'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import { useState } from 'react';
 
 
 export const ChoosePlan = ({section}) => {
+
+  const [monthly, setMonthly] = useState(true)
+
   const featureIncludedIcon = <CheckCircleOutlineIcon sx={{color: "green.main", fontSize: "1.3rem"}} />
 
   const featureNotIncludedIcon = <CheckCircleOutlineIcon sx={{color: "#55555540", fontSize: "1.3rem"}} />
@@ -17,7 +21,7 @@ export const ChoosePlan = ({section}) => {
       icon: stackFront,
       price: {
         monthly: 0,
-        anually: 0,
+        annually: 0,
       },
       includedFeatures: [
         "Ut enim ad", "Minim veniam",
@@ -32,7 +36,7 @@ export const ChoosePlan = ({section}) => {
       icon: unisonFront,
       price: {
         monthly: 12,
-        anually: 10,
+        annually: 10,
       },
       includedFeatures: [
         "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud"
@@ -47,7 +51,7 @@ export const ChoosePlan = ({section}) => {
       icon: virtuosoFront,
       price: {
         monthly: 18,
-        anually: 15,
+        annually: 15,
       },
       includedFeatures: [
         "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud", "Nisi ut aliquip", "Ad veniam"
@@ -66,7 +70,7 @@ export const ChoosePlan = ({section}) => {
       )}
       <div className='flex items-center justify-center gap-2'>
         <p className='font-bold lg:text-xl'>Monthly</p>
-        <Switch color='green' className='text-primary-green'  />
+        <Switch onChange={e => setMonthly(e.target.checked)} color='green' className='text-primary-green'  />
         <p className='font-bold lg:text-xl'>Annually</p>
       </div>
       <div className='w-full flex items-center gap-5 snap-x overflow-x-auto pt-3 pb-10 px-5 overflow-y-hidden lg:justify-evenly'>
@@ -78,8 +82,8 @@ export const ChoosePlan = ({section}) => {
             </div>
             <p className='font-medium leading-5 text-gray-600'>{plan.description}</p>
             <div className='flex items-end gap-1'>
-              <span className='text-5xl font-semibold lg:text-7xl'>${plan.price.monthly}</span>
-              <p className='font-medium text-lg text-gray-500'>/monthly</p>
+              <span className='text-5xl font-semibold lg:text-7xl'>${monthly ? plan.price.annually : plan.price.monthly}</span>
+              <p className='font-medium text-lg text-gray-500'>/{monthly ? "annually" : "monthly"}</p>
             </div>
             <p className='font-bold text-lg'>{plan.title} includes</p>
             <ul className='flex flex-col gap-3'>

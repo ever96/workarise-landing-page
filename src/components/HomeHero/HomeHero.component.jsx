@@ -6,8 +6,7 @@ export const HomeHero = () => {
   return (
     <section 
       style={{
-        background: "rgb(193, 217, 206)",
-        background: "linear-gradient(to left,rgb(172, 189, 182) 0%,rgb(172, 205, 190) 0%,rgb(244, 243, 243) 94%)"
+        background: "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(28,204,127,1) 180%)"
       }} 
       className='w-full flex flex-col items-center py-12 px-2 gap-4 text-center lg:min-h-[1050px]'
     >

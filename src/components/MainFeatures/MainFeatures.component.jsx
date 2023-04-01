@@ -12,7 +12,7 @@ export const MainFeatures = () => {
         <div className='flex flex-col items-center gap-4 lg:flex-row lg:items-start'>
           <img className='w-12' src={unison} alt="Unison Icon" />
           <div>
-            <p className='text-lg font-bold md:text-xl lg:text-2xl'>Simple Management</p>
+            <p className='text-lg font-bold md:text-xl lg:text-2xl'>Successful Business</p>
             <p className="max-w-[350px] font-normal lg:text-lg">With many options available on the market, finding the right project management software for your needs is simple, and once you've chosen one, the learning curve is typically minimal, making it easy to start using it right away.</p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export const MainFeatures = () => {
         <div className='flex flex-col items-center gap-4 lg:flex-row lg:items-start'>
           <img className='w-12' src={stack} alt="Stack Icon" />
           <div>
-            <p className='text-lg font-bold md:text-xl lg:text-2xl'>Successful Business</p>
+            <p className='text-lg font-bold md:text-xl lg:text-2xl'>Simple Management</p>
             <p className="max-w-[350px] font-normal lg:text-lg">Our clean Home Dashboard will allow you to easily access all tasks, messages, team members, and the calendar all from the home screen.</p>
           </div>
         </div>

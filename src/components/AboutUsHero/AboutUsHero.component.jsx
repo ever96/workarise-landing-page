@@ -5,10 +5,9 @@ export const AboutUsHero = () => {
   return (
     <section 
     style={{
-      background: "rgb(193, 217, 206)",
-      background: "linear-gradient(to left,rgb(172, 189, 182) 0%,rgb(172, 205, 190) 0%,rgb(244, 243, 243) 94%)"
-    }}  
-    className="w-full flex flex-col items-center pt-12 px-2 gap-4 lg:gap-10"
+      background: "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(28,204,127,1) 180%)"
+    }}   
+    className="w-full flex flex-col items-center pt-12 pb-12 px-2 gap-4 lg:gap-10 lg:pb-12"
     > 
       <h1 className='text-2xl font-extrabold text-center leading-9 md:text-3xl lg:text-6xl'>The Smarter Way to <br /> Manage your Business.</h1>
       <div className='flex flex-col items-center gap-4 lg:flex-col-reverse'>

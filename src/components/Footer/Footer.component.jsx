@@ -9,6 +9,14 @@ import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   const { device } = useIdentifyDevice()
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
   return (
     <footer className='w-full flex flex-col gap-4 py-10 bg-[#F6F6F680]'>
       <section className="w-[85%] flex flex-col justify-start gap-4 mx-auto md:w-[95%] md:flex-row md:justify-around">
@@ -24,10 +32,10 @@ export const Footer = () => {
         <div className="flex justify-between md:w-[25%]">
           <ul className="flex flex-col gap-3">
             <p className="font-bold text-lg lg:text-xl">Workarise</p>
-            <NavLink to="/"  className="font-medium text-lg lg:text-xl hover:underline">Home</NavLink>
-            <NavLink to="/about-us" className="font-medium text-lg lg:text-xl hover:underline">About</NavLink>
-            <NavLink to="/pricing" className="font-medium text-lg lg:text-xl hover:underline">Pricing</NavLink>
-            <NavLink to="/contact" className="font-medium text-lg lg:text-xl hover:underline">Contact</NavLink>
+            <NavLink to="/" onClick={scrollToTop}  className="font-medium text-lg lg:text-xl hover:underline">Home</NavLink>
+            <NavLink to="/about-us" onClick={scrollToTop} className="font-medium text-lg lg:text-xl hover:underline">About</NavLink>
+            <NavLink to="/pricing" onClick={scrollToTop} className="font-medium text-lg lg:text-xl hover:underline">Pricing</NavLink>
+            <NavLink to="/contact" onClick={scrollToTop} className="font-medium text-lg lg:text-xl hover:underline">Contact</NavLink>
           </ul>
           {device === "desktop" && <Divider flexItem orientation="vertical" />}
           <ul className="flex flex-col gap-3">

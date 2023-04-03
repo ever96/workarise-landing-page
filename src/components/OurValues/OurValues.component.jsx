@@ -47,7 +47,7 @@ export const OurValues = () => {
         <h2 className="text-2xl font-extrabold text-center md:text-3xl lg:text-6xl lg:text-left">
           Our 
           <span style={{
-            margin: "0 10px",
+            marginLeft: "10px",
             borderBottom: "4px solid",
             borderBottomColor: "#75E5B4"}}>Values
           </span> 

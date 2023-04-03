@@ -7,7 +7,7 @@ export const OurMission = () => {
         <h2 className="text-2xl font-extrabold md:text-3xl lg:text-6xl">
           Our 
           <span style={{
-            margin: "0 10px",
+            marginLeft: "10px",
             borderBottom: "4px solid",
             borderBottomColor: "#75E5B4"}}>Mission
           </span> 

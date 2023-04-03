@@ -7,7 +7,7 @@ export const DesktopMenu = () => {
       {menuItems.map((item, index) => (
         <li className="flex items-center justify-center" key={`${item.name}-${index}`}>
           <NavLink
-            className={({isActive}) => `min-w-[96px] h-11 rounded-3xl p-2 text-center font-bold ${isActive ? "bg-primary-black text-white" : ""}` } 
+            className={({isActive}) => `min-w-[96px] h-11 rounded-3xl p-2 text-center font-bold ${isActive ? "bg-primary-black text-white" : ""} hover:opacity-70 transition-opacity` } 
             to={item.path} 
             end
             target={item.outside ? "_blank" : ""}

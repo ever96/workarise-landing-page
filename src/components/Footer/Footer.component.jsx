@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import useIdentifyDevice from '@hooks/useIdentifyDevice'
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   const { device } = useIdentifyDevice()
@@ -16,17 +17,17 @@ export const Footer = () => {
             <img className="w-[130px] lg:w-[160px]" src={Logo} alt="Workarise Logo" />
           </picture>
           <p className='font-medium leading-6 lg:text-lg md:max-w-[250px] lg:max-w-[300px]'>Get started using Workarise today and we'll change the way you run your business.</p>
-          <button className='w-[160px] p-2 rounded-xl bg-primary-black  text-white font-bold lg:text-lg'>Get Started</button>
+          <NavLink to="https://workarise.com" target="_blank" className='w-[120px]  p-2 rounded-xl bg-primary-black  text-white text-center font-bold lg:text-lg lg:w-[160px] hover:opacity-70 transition-opacity'>Get Started</NavLink>
 
         </div>
         <Divider flexItem orientation={device === "desktop" ? "vertical" : "horizontal" } />
         <div className="flex justify-between md:w-[25%]">
           <ul className="flex flex-col gap-3">
             <p className="font-bold text-lg lg:text-xl">Workarise</p>
-            <li className="font-medium text-lg lg:text-xl">Home</li>
-            <li className="font-medium text-lg lg:text-xl">About</li>
-            <li className="font-medium text-lg lg:text-xl">Pricing</li>
-            <li className="font-medium text-lg lg:text-xl">Contact</li>
+            <NavLink to="/"  className="font-medium text-lg lg:text-xl hover:underline">Home</NavLink>
+            <NavLink to="/about-us" className="font-medium text-lg lg:text-xl hover:underline">About</NavLink>
+            <NavLink to="/pricing" className="font-medium text-lg lg:text-xl hover:underline">Pricing</NavLink>
+            <NavLink to="/contact" className="font-medium text-lg lg:text-xl hover:underline">Contact</NavLink>
           </ul>
           {device === "desktop" && <Divider flexItem orientation="vertical" />}
           <ul className="flex flex-col gap-3">
@@ -50,10 +51,10 @@ export const Footer = () => {
           {device === "desktop" && <Divider flexItem orientation="vertical" />}
           <ul className="flex flex-col gap-3 pr-4">
             <p className="font-bold text-lg lg:text-xl">Socials</p>
-            <li className="font-medium text-lg lg:text-xl"><FacebookIcon /></li>
-            <li className="font-medium text-lg lg:text-xl"><InstagramIcon /></li>
-            <li className="font-medium text-lg lg:text-xl"><TwitterIcon /></li>
-            <li className="font-medium text-lg lg:text-xl"><LinkedInIcon /></li>
+            <NavLink to="https://www.facebook.com/Workariseapp" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><FacebookIcon /></NavLink>
+            <NavLink to="https://www.instagram.com/workarise" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><InstagramIcon /></NavLink>
+            <NavLink to="https://twitter.com/workarise" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><TwitterIcon /></NavLink>
+            <NavLink to="https://www.linkedin.com/company/workarise" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><LinkedInIcon /></NavLink>
           </ul>
         </div>
       </section>

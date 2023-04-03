@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export const ChoosePlan = ({section}) => {
 
-  const [monthly, setMonthly] = useState(true)
+  const [monthly, setMonthly] = useState(false)
 
   const featureIncludedIcon = <CheckCircleOutlineIcon sx={{color: "green.main", fontSize: "1.3rem"}} />
 
@@ -83,7 +83,7 @@ export const ChoosePlan = ({section}) => {
             <p className='font-medium leading-5 text-gray-600'>{plan.description}</p>
             <div className='flex items-end gap-1'>
               <span className='text-5xl font-semibold lg:text-7xl'>${monthly ? plan.price.annually : plan.price.monthly}</span>
-              <p className='font-medium text-lg text-gray-500'>/{monthly ? "annually" : "monthly"}</p>
+              <p className='font-medium text-lg text-gray-500'>/{!monthly ? "monthly" : "annually"}</p>
             </div>
             <p className='font-bold text-lg'>{plan.title} includes</p>
             <ul className='flex flex-col gap-3'>
@@ -100,7 +100,7 @@ export const ChoosePlan = ({section}) => {
                 </li>
               ))}              
             </ul>
-            <button className='w-[60%] mx-auto p-2 rounded-xl bg-primary-black  text-white text-lg font-bold lg:w-[90%] lg:text-xl'>Get {plan.title} Plan</button>
+            <button className='w-[60%] mx-auto p-2 rounded-xl bg-primary-black  text-white text-lg font-bold lg:w-[90%] lg:text-xl hover:opacity-70 transition-opacity'>Get {plan.title} Plan</button>
           </article>
         ))}
       </div>

@@ -18,7 +18,7 @@ export const HomeHero = () => {
           <NavLink 
             to="https://workarise.com/" 
             target="_blank" 
-            className="w-[max-content] text-lg font-extrabold bg-primary-black text-white rounded-xl py-[6px] px-6 md:text-xl lg:text-3xl lg:px-12" 
+            className="w-[max-content] text-lg font-extrabold bg-primary-black text-white rounded-xl py-[6px] px-6 md:text-xl lg:text-3xl lg:px-12 hover:opacity-70 transition-opacity" 
             end
           >
             Sign Up Now

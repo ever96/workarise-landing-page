@@ -43,7 +43,7 @@ export const WhatWeOffer = () => {
   return (
     <section className='w-full flex flex-col items-center pt-12 gap-4 text-center lg:gap-6 lg:pt-20'>
       <h2 className='text-2xl font-extrabold md:text-3xl lg:text-6xl'>
-        What We <span style={{marginLeft: "10px", borderBottom: "4px solid", borderBottomColor: "#75E5B4"}}>Offer</span>
+        What We <span className="lg:ml-2.5" style={{borderBottom: "4px solid", borderBottomColor: "#75E5B4"}}>Offer</span>
       </h2>
       <p className="max-w-[800px] text-lg font-medium px-4 md:text-xl lg:text-2xl">Workarise offers you an easy and simple way to manage your business. You will be able to secure your team and tasks all in one platform.</p>
       <ul className="w-full flex items-center justify-center px-5 py-10 bg-[#F6F6F680] flex-wrap gap-8 lg:mt-14 lg:gap-20 lg:py-24">

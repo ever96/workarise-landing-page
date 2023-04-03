@@ -36,7 +36,7 @@ export const FormContact = () => {
           <input value={email} onChange={e => setEmail(e.target.value)} type="email" id='user_email' name="user_email" className="shadow-sm  text-sm rounded-md w-full p-2.5 outline-2 outline-black  border-primary-black border" placeholder='example@gmail.com' required />
           <label htmlFor="message" className="w-full text-start  font-medium lg:text-lg">Message *</label>
           <textarea value={message} onChange={e => setMessage(e.target.value)} name="message" id="message" rows="4" className="shadow-sm text-sm rounded-md w-full p-2.5 outline-2 outline-black  border-primary-black border" placeholder="Hello!" required></textarea>
-          <button disabled={loading} className="text-lg bg-primary-black rounded-md text-white font-bold py-1.5 px-5 lg:text-xl lg:px-8" type="submit">{!loading ? 'Send' : 'Sending'}</button>
+          <button disabled={loading} className="text-lg bg-primary-black rounded-md text-white font-bold py-1.5 px-5 lg:text-xl lg:px-8 hover:opacity-70 transition-opacity" type="submit">{!loading ? 'Send' : 'Sending'}</button>
         </form>
       </section>
       <FormModal error={error} modal={modal} setModal={setModal} />

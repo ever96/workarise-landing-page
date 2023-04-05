@@ -9,8 +9,8 @@ export const DesktopMenu = () => {
           <NavLink
             className={({isActive}) => `min-w-[96px] h-11 rounded-3xl p-2 text-center font-bold ${isActive ? "bg-primary-black text-white" : ""} hover:opacity-70 transition-opacity` } 
             to={item.path} 
-            end
             target={item.outside ? "_blank" : ""}
+            rel={item.outside ? "noopener noreferrer" : ""}
           >
             {item.name}
           </NavLink>

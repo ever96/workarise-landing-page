@@ -66,7 +66,7 @@ export const OurValues = () => {
         </ul>
       </div>
       <div className='hidden px-3 pt-3 rounded-3xl lg:block' style={{background: "rgba(28, 204, 127, 0.05)"}}>
-        <img className='w-full max-w-[200px] pt-1 md:max-w-[300px] xl:max-w-[700px]' src={Ever} alt="" />
+        <img className='w-full max-w-[200px] pt-1 md:max-w-[300px] xl:max-w-[700px]' src={Ever} alt="Ever Photo" />
       </div>
     </section>
   )

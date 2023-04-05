@@ -11,14 +11,14 @@ import './HomeHeroImage.css'
 export const HomeHeroImage = () => {
   return (
     <picture className='relative'>
-      <img className="w-full max-w-[500px] md:max-w-[600px] xl:max-w-[700px]" src={Hero} alt="Workarise Demo Image" />
+      <img className="w-full max-w-[500px] md:max-w-[600px] xl:max-w-[700px]" src={Hero} alt="Workarise App Demo Image" />
 
-      <img className="trace" src={Trace} />
-      <img className="unison" src={Unison} />
-      <img className="projects" src={Projects} />
-      <img className="calendar" src={Calendar} />
-      <img className="team" src={Team} />
-      <img className="tasks" src={Tasks} />
+      <img className="trace" src={Trace} alt="Trace HomeHero Image" />
+      <img className="unison" src={Unison} alt="Unison HomeHero Image" />
+      <img className="projects" src={Projects} alt="Workarise Project Management Demo" />
+      <img className="calendar" src={Calendar} alt="Workarise Calendar Demo" />
+      <img className="team" src={Team} alt="Workarise Team Management Demo" />
+      <img className="tasks" src={Tasks} alt="Workarise Task Management Demo" />
     </picture>
   )
 }

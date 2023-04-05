@@ -3,8 +3,6 @@ import Jose from '@assets/images/josePhoto.png'
 import ArrowLeft from '@assets/icons/arrowLeft.svg'
 import ArrowRight from '@assets/icons/arrowRight.svg'
 
-
-
 export const AboutUsHeroImage = () => {
   return (
     <div className='w-full flex justify-center items-center gap-4'>

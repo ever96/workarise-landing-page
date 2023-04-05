@@ -33,7 +33,7 @@ export const MainFeatures = () => {
           <img className='w-12' src={stack} alt="Stack Icon" />
           <div>
             <p className='text-lg font-bold md:text-xl lg:text-2xl'>Simple Management</p>
-            <p className="max-w-[350px] font-normal lg:text-lg">Our clean Home Dashboard will allow you to easily access all tasks, messages, team members, and the calendar all from the home screen.</p>
+            <p className="max-w-[350px] font-normal lg:text-lg">Workarise is designed to be user-friendly and easy to navigate. The software allows you to organize and track your projects, assign tasks to team members, and set deadlines in one place.</p>
           </div>
         </div>
         <img className='w-full max-w-[500px] md:max-w-[550px] lg:max-w-[800px]' src={HomeDashboard} alt="Workarise Home Dashboard Demo" />

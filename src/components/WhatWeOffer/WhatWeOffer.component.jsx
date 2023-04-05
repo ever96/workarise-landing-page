@@ -11,32 +11,38 @@ export const WhatWeOffer = () => {
     {
       title: "Manage Tasks",
       description: "Manage your team's tasks through our task management page.",
-      icon: <RuleIcon sx={{color: "green.main", fontSize: "3rem"}} />
+      icon: <RuleIcon sx={{color: "green.main", fontSize: "3rem"}} />,
+      alt: "Manage Tasks Icon"
     },
     {
       title: "Instant Messaging",
       description: "Be able to message your team whenever in a single click.",
-      icon: <TextsmsIcon sx={{color: "green.main", fontSize: "3rem"}} />
+      icon: <TextsmsIcon sx={{color: "green.main", fontSize: "3rem"}} />,
+      alt: "Instant Messaging Icon"
     },
     {
       title: "Manage Your Team",
       description: "Keep track of team members and groups.",
-      icon: <PeopleAltIcon sx={{color: "green.main", fontSize: "3rem"}} />
+      icon: <PeopleAltIcon sx={{color: "green.main", fontSize: "3rem"}} />,
+      alt: "Manage your Team Icon"
     },
     {
       title: "Manage Projects",
       description: "Stay up to date your project's timeline.",
-      icon: <AppsIcon sx={{color: "green.main", fontSize: "3rem"}} />
+      icon: <AppsIcon sx={{color: "green.main", fontSize: "3rem"}} />,
+      alt: "Manage Projects Icon"
     },
     {
       title: "Communication",
       description: "Be able to contact all clients, employers, and employees.",
-      icon: <InboxIcon sx={{color: "green.main", fontSize: "3rem"}} />
+      icon: <InboxIcon sx={{color: "green.main", fontSize: "3rem"}} />,
+      alt: "Communication Icon"
     },
     {
       title: "Track It All",
       description: "Keep track of projects, tasks, and meetings with our calendar.",
-      icon: <CalendarMonthIcon sx={{color: "green.main", fontSize: "3rem"}} />
+      icon: <CalendarMonthIcon sx={{color: "green.main", fontSize: "3rem"}} />,
+      alt: "Track It All Icon",
     },
   ]
 

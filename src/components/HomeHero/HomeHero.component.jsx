@@ -17,9 +17,9 @@ export const HomeHero = () => {
           <p className='text-lg font-medium py-2 md:text-xl lg:text-2xl'>We'll change the way you run your business.</p>
           <NavLink 
             to="https://workarise.com/" 
-            target="_blank" 
+            target="_blank"
+            rel="noopener noreferrer" 
             className="w-[max-content] text-lg font-extrabold bg-primary-black text-white rounded-xl py-[6px] px-6 md:text-xl lg:text-3xl lg:px-12 hover:opacity-70 transition-opacity" 
-            end
           >
             Sign Up Now
           </NavLink>

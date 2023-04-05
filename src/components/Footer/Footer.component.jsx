@@ -59,10 +59,10 @@ export const Footer = () => {
           {device === "desktop" && <Divider flexItem orientation="vertical" />}
           <ul className="flex flex-col gap-3 pr-4">
             <p className="font-bold text-lg lg:text-xl">Socials</p>
-            <NavLink to="https://www.facebook.com/Workariseapp" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><FacebookIcon /></NavLink>
-            <NavLink to="https://www.instagram.com/workarise" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><InstagramIcon /></NavLink>
-            <NavLink to="https://twitter.com/workarise" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><TwitterIcon /></NavLink>
-            <NavLink to="https://www.linkedin.com/company/workarise" target="_blank" className="font-medium text-lg lg:text-xl hover:opacity-50"><LinkedInIcon /></NavLink>
+            <NavLink to="https://www.facebook.com/Workariseapp" target="_blank" rel="noopener noreferrer" className="font-medium text-lg lg:text-xl hover:opacity-50"><FacebookIcon /></NavLink>
+            <NavLink to="https://www.instagram.com/workarise" target="_blank" rel="noopener noreferrer" className="font-medium text-lg lg:text-xl hover:opacity-50"><InstagramIcon /></NavLink>
+            <NavLink to="https://twitter.com/workarise" target="_blank" rel="noopener noreferrer" className="font-medium text-lg lg:text-xl hover:opacity-50"><TwitterIcon /></NavLink>
+            <NavLink to="https://www.linkedin.com/company/workarise" target="_blank" rel="noopener noreferrer" className="font-medium text-lg lg:text-xl hover:opacity-50"><LinkedInIcon /></NavLink>
           </ul>
         </div>
       </section>

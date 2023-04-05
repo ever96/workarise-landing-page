@@ -12,7 +12,7 @@ export const MeetTheTeam = () => {
       <ul className='flex flex-wrap gap-12 justify-center'>
         <li className='flex flex-col items-center gap-3'>
           <div className='px-3 pt-4 bg-[#f6f6f6] max-w-[200px]'>
-            <img src={Jose} alt="" />
+            <img src={Jose} alt="Jose Photo" />
           </div>
           <div className='flex justify-between'>
             <div className='flex flex-col'>

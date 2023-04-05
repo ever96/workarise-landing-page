@@ -1,9 +1,9 @@
+import { useState } from 'react';
 import { Switch } from '@mui/material'
 import stackFront from '@assets/icons/stackFrontIcon.png'
 import unisonFront from '@assets/icons/unisonFrontIcon.png'
 import virtuosoFront from '@assets/icons/virtuosoFrontIcon.png'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import { useState } from 'react';
 
 
 export const ChoosePlan = ({section}) => {
@@ -19,6 +19,7 @@ export const ChoosePlan = ({section}) => {
       title: "Free",
       description: "Free software with limited features, for individual accounts.",
       icon: stackFront,
+      alt: "Stack Front Icon",
       price: {
         monthly: 0,
         annually: 0,
@@ -34,6 +35,7 @@ export const ChoosePlan = ({section}) => {
       title: "Pro",
       description: "Professional experience with all but team features included.",
       icon: unisonFront,
+      alt: "Unison Front Icon",
       price: {
         monthly: 12,
         annually: 10,
@@ -49,6 +51,7 @@ export const ChoosePlan = ({section}) => {
       title: "Team",
       description: "Everything included from Free and Pro with Team features.",
       icon: virtuosoFront,
+      alt: "Virtuoso Front Icon",
       price: {
         monthly: 18,
         annually: 15,
@@ -77,7 +80,7 @@ export const ChoosePlan = ({section}) => {
         {plans.map((plan, index) => (
           <article key={`${plan.title}/${index}`} className={`min-w-[288px] max-w-[310px] ${section === "comparePlans" ? 'bg-white' : ''} flex flex-col justify-center gap-5 overflow-hidden shrink-0 shadow-md rounded-2xl py-10 px-8 lg:gap-7 lg:max-w-[330px]`}>
             <div className='flex gap-4'>
-              <img src={plan.icon} alt="" />
+              <img src={plan.icon} alt={plan.alt} />
               <h3 className='text-2xl font-bold md:text-3xl lg:text-4xl'>{plan.title}</h3>
             </div>
             <p className='font-medium leading-5 text-gray-600'>{plan.description}</p>

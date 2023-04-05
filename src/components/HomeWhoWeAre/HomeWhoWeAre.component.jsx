@@ -7,19 +7,19 @@ export const HomeWhoWeAre = () => {
   const teamCharacteristics = [
     {
       title: "Start Up",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "We are a startup that specializes in project management software to redefine the word productivity",
       image: Trace,
       altImage: "Trace Image"
     },
     {
       title: "A Creative Team",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "We expect to combine good UX and engineering to deliver the best experience in project management",
       image: Virtuoso,
       altImage: "Virtuoso Image"
     },
     {
       title: "International",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Our team members are spread across different parts of the world, each with their own cultural backgrounds, experiences, and insights",
       image: Unison,
       altImage: "Unison Image"
     },

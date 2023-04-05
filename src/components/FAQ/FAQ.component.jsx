@@ -38,7 +38,7 @@ export const FAQ = () => {
   return (
     <section className="w-full flex flex-col items-center py-12 px-2 gap-8 lg:w-[50%] lg:mx-auto">
       <div className='w-full flex gap-20 lg:gap-48'>
-        <img className='w-24 lg:w-36 lg:h-12' src={TraceOn} alt="" />
+        <img className='w-24 lg:w-36 lg:h-12' src={TraceOn} alt="Trace On Icon" />
         <h2 className='text-2xl font-extrabold leading-9 md:text-3xl lg:text-6xl'>FAQ</h2>
       </div>
       <ul className='w-full flex flex-col'>
@@ -54,7 +54,7 @@ export const FAQ = () => {
         ))}
       </ul>
       <div className='w-full flex justify-end'>
-        <img className='w-24 lg:w-36 lg:h-12' src={TraceOff} alt="" />
+        <img className='w-24 lg:w-36 lg:h-12' src={TraceOff} alt="Trace Off Icon" />
       </div>
     </section>
   )

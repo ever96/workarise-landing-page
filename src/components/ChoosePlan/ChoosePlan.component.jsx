@@ -25,10 +25,10 @@ export const ChoosePlan = ({section}) => {
         annually: 0,
       },
       includedFeatures: [
-        "Ut enim ad", "Minim veniam",
+        "Create Tasks", "Until 3 Team size", "Gantt Chart", "Notifications", "Organizations"
       ],
       notIncludedFeatures: [
-        "Enim ad minim", "Ouis nostrud", "Nisi ut aliquip", "Ad veniam"
+        "Meetings", "Personal Support", "Unlimited Tasks", "Unlimited guests"
       ]
     },
     {
@@ -41,7 +41,7 @@ export const ChoosePlan = ({section}) => {
         annually: 10,
       },
       includedFeatures: [
-        "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud"
+        "Free Plan Features", "Teams with more than 3 users", "Meetings", "Personal Support", "Unlimited Tasks", "Unlimited Guests"
       ],
       notIncludedFeatures: [
          "Nisi ut aliquip", "Ad veniam"
@@ -57,7 +57,7 @@ export const ChoosePlan = ({section}) => {
         annually: 15,
       },
       includedFeatures: [
-        "Ut enim ad", "Minim veniam", "Enim ad minim", "Ouis nostrud", "Nisi ut aliquip", "Ad veniam"
+        "Coming soon", 
       ],
       notIncludedFeatures: [],
     }
@@ -78,7 +78,7 @@ export const ChoosePlan = ({section}) => {
       </div>
       <div className='w-full flex items-center gap-5 snap-x overflow-x-auto pt-3 pb-10 px-5 overflow-y-hidden lg:justify-evenly'>
         {plans.map((plan, index) => (
-          <article key={`${plan.title}/${index}`} className={`min-w-[288px] max-w-[310px] ${section === "comparePlans" ? 'bg-white' : ''} flex flex-col justify-center gap-5 overflow-hidden shrink-0 shadow-md rounded-2xl py-10 px-8 lg:gap-7 lg:max-w-[330px]`}>
+          <article key={`${plan.title}/${index}`} className={`min-w-[288px] max-w-[310px] min-h-[684px] ${section === "comparePlans" ? 'bg-white' : ''} flex flex-col gap-5 overflow-hidden shrink-0 shadow-md rounded-2xl py-10 px-8 lg:gap-7 lg:max-w-[330px] lg:min-h-[756px]`}>
             <div className='flex gap-4'>
               <img src={plan.icon} alt={plan.alt} />
               <h3 className='text-2xl font-bold md:text-3xl lg:text-4xl'>{plan.title}</h3>

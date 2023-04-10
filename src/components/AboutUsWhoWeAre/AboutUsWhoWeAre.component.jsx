@@ -10,32 +10,32 @@ export const AboutUsWhoWeAre = () => {
   const characteristics = [
     {
       title: 'Passionate',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+      description: 'Our passion for integrating the best UX with Productivity problems',
       icon: <HandshakeIcon sx={{fontSize: ["1.5rem", "1.5rem", "2.5rem"]}} />
     },
     {
       title: 'Creative',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+      description: 'Engineering needs a creative vision to solve Human problems',
       icon: <LightbulbIcon sx={{fontSize: ["1.5rem", "1.5rem", "2.5rem"]}} />
     },
     {
       title: 'Experienced',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+      description: 'All our teams have some experience in productivity issues and work culture',
       icon: <SchoolIcon sx={{fontSize: ["1.5rem", "1.5rem", "2.5rem"]}} />
     },
     {
       title: 'Motivated',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+      description: 'Good culture motivates people',
       icon: <StarOutlineIcon sx={{fontSize: ["1.5rem", "1.5rem", "2.5rem"]}} />
     },
     {
       title: 'Honest',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+      description: 'Feedback culture requires honest people',
       icon: <PanToolIcon sx={{fontSize: ["1.5rem", "1.5rem", "2.5rem"]}} />
     },
     {
       title: 'Knowledgable',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
+      description: 'Our knowledgeable teams provide informed solutions for your business needs.',
       icon: <ImportContactsIcon sx={{fontSize: ["1.5rem", "1.5rem", "2.5rem"]}} />
     },
   ]

@@ -10,7 +10,7 @@ export const OurValues = () => {
 
   const values = [
     {
-      title: "Improvement",
+      title: "Growth",
       description: "We are actively seeking to improve our product and our company.",
       icon: <TrendingUpIcon />
     },
@@ -21,7 +21,7 @@ export const OurValues = () => {
     },
     {
       title: "Improvement",
-      description: "We are always on the look-out for inprovement in our product and company.",
+      description: "We actively try to iterate the product with our User's feedback.",
       icon: <ShieldIcon />
     },
     {
@@ -42,7 +42,7 @@ export const OurValues = () => {
   ]
 
   return (
-    <section className="w-full flex flex-col items-center gap-4 px-3 pt-16 pb-10 md:px-7 lg:px-10 md:items-center md:flex-row-reverse md:justify-around lg:pt-24">
+    <section className="w-full flex flex-col items-center gap-4 px-3 pt-16 pb-10 md:px-7 lg:px-10 md:items-center md:flex-row-reverse md:justify-around lg:pt-24 lg:pb-24">
       <div className="flex flex-col gap-4 md:gap-10 lg:gap-14">
         <h2 className="text-2xl font-extrabold text-center md:text-3xl lg:text-6xl lg:text-left">
           Our 

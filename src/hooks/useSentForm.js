@@ -18,10 +18,10 @@ export const useSentForm = ({form}) => {
 
       //start sending email
       const send = await emailjs.sendForm(
-        "", //service id
-        "", //template id
+        "service_9k7jyef", //service id
+        "template_9neho7a", //template id
         form.current,
-        "" // public key
+        "pdcyddoaTYDtgYOt8" // public key
       );
 
       // Email sent and stop loading

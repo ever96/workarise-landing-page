@@ -2,16 +2,17 @@ import TraceOn from '@assets/icons/traceOnFAQ.png'
 import TraceOff from '@assets/icons/traceOffFAQ.png'
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 export const FAQ = () => {
 
   const faqs = [
     {
       question: "Does Workarise come with a free plan?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni."
+      answer: "Yes, we have a free plan with complete functionalities."
     },
     {
       question: "How many accounts can you have on Workarise?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni."
+      answer: "Depending of your subscription, the free tier until 3 users and pro unlimited."
     },
     {
       question: "How much does Workarise cost?",
@@ -19,19 +20,19 @@ export const FAQ = () => {
     },
     {
       question: "Can I cancel at any time?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni.",
+      answer: "Yes, you can do it.",
     },
     {
       question: "Do you offer any discounts?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni."
+      answer: "Yes, if you pay a yearly subscription you will have 25% off in pro and 35% in teams soon."
     },
     {
       question: "Can I change my plan at any time?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni."
+      answer: "Yes, you can do it."
     },
     {
       question: "What payment options do you accept?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni."
+      answer: "Credit and debit cards and banks transfer."
     }
   ]
 

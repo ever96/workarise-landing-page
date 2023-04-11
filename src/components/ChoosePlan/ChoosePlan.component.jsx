@@ -44,7 +44,7 @@ export const ChoosePlan = ({section}) => {
         "Free Plan Features", "Teams with more than 3 users", "Meetings", "Personal Support", "Unlimited Tasks", "Unlimited Guests"
       ],
       notIncludedFeatures: [
-         "Nisi ut aliquip", "Ad veniam"
+         "Team Plan Features"
       ]
     },
     {

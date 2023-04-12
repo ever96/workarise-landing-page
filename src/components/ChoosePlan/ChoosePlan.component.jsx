@@ -37,8 +37,8 @@ export const ChoosePlan = ({section}) => {
       icon: unisonFront,
       alt: "Unison Front Icon",
       price: {
-        monthly: 12,
-        annually: 10,
+        monthly: 6.99,
+        annually: 5.25,
       },
       includedFeatures: [
         "Free Plan Features", "Teams with more than 3 users", "Meetings", "Personal Support", "Unlimited Tasks", "Unlimited Guests"
@@ -53,8 +53,8 @@ export const ChoosePlan = ({section}) => {
       icon: virtuosoFront,
       alt: "Virtuoso Front Icon",
       price: {
-        monthly: 18,
-        annually: 15,
+        monthly: 9.99,
+        annually: 8.25,
       },
       includedFeatures: [
         "Coming soon", 

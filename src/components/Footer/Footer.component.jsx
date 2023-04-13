@@ -71,14 +71,14 @@ export const Footer = () => {
               Contact
             </NavLink>
           </ul>
-          {device === 'desktop' && <Divider flexItem orientation='vertical' />}
-          <ul className='flex flex-col gap-3'>
+          {/* {device === 'desktop' && <Divider flexItem orientation='vertical' />} */}
+          {/* <ul className='flex flex-col gap-3'>
             <p className='font-bold text-lg lg:text-xl'>About Us</p>
             <li className='font-medium text-lg lg:text-xl'>Team</li>
             <li className='font-medium text-lg lg:text-xl'>Product</li>
             <li className='font-medium text-lg lg:text-xl'>Story</li>
             <li className='font-medium text-lg lg:text-xl'>Careers</li>
-          </ul>
+          </ul> */}
         </div>
         <Divider
           flexItem

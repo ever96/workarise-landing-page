@@ -21,7 +21,7 @@ export const menuItems = [
   },
   {
     name: 'Sign Up Now',
-    path: 'https://app.workarise.com/',
+    path: 'https://workarise-7f6e3.web.app/',
     outside: true,
   },
 ];

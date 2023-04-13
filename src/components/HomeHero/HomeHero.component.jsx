@@ -20,7 +20,7 @@ export const HomeHero = () => {
             We'll change the way you run your business.
           </p>
           <NavLink
-            to='https://app.workarise.com/'
+            to='https://workarise-7f6e3.web.app/'
             target='_blank'
             rel='noopener noreferrer'
             className='w-[max-content] text-lg font-extrabold bg-primary-black text-white rounded-xl py-[6px] px-6 md:text-xl lg:text-3xl lg:px-12 hover:opacity-70 transition-opacity'>

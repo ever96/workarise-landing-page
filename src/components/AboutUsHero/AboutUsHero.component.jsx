@@ -22,7 +22,7 @@ export const AboutUsHero = () => {
               Join Us
             </NavLink>
             <NavLink
-              to='https://workarise-7f6e3.web.app/'
+              to='https://workarise.com/'
               target='_blank'
               rel='noopener noreferrer'
               className='w-[max-content] text-lg font-extrabold bg-primary-black text-white rounded-xl py-[6px] px-6 md:text-xl lg:text-3xl lg:px-12 hover:opacity-70 transition-opacity'>

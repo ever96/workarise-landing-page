@@ -33,7 +33,7 @@ export const Footer = () => {
             your business.
           </p>
           <NavLink
-            to='https://workarise-7f6e3.web.app/'
+            to='https://workarise.com/'
             target='_blank'
             className='w-[120px]  p-2 rounded-xl bg-primary-black  text-white text-center font-bold lg:text-lg lg:w-[160px] hover:opacity-70 transition-opacity'>
             Get Started

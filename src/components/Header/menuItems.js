@@ -9,11 +9,11 @@ export const menuItems = [
     path: '/pricing',
     outside: false,
   },
-  {
-    name: 'About Us',
-    path: '/about-us',
-    outside: false,
-  },
+  // {
+  //   name: 'About Us',
+  //   path: '/about-us',
+  //   outside: false,
+  // },
   {
     name: 'Contact',
     path: '/contact',

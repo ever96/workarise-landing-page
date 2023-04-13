@@ -11,34 +11,19 @@ const AppRouting = () => {
     <>
       <Header />
       <Routes>
-        <Route
-          path='/'
-          element={
-            <Home />
-          }
-        />
-        <Route
-          path='/pricing'
-          element={
-            <Pricing />
-          }
-        />
-        <Route
+        <Route path='/' element={<Home />} />
+        <Route path='/pricing' element={<Pricing />} />
+        {/* <Route
           path='/about-us'
           element={
             <AboutUs />
           }
-        />
-        <Route
-          path='/contact'
-          element={
-            <Contact />
-          }
-        />
+        /> */}
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default AppRouting
+export default AppRouting;

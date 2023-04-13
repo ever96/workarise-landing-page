@@ -52,12 +52,12 @@ export const Footer = () => {
               className='font-medium text-lg lg:text-xl hover:underline'>
               Home
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to='/about-us'
               onClick={scrollToTop}
               className='font-medium text-lg lg:text-xl hover:underline'>
               About
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to='/pricing'
               onClick={scrollToTop}

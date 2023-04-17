@@ -11,7 +11,7 @@ export const HomeHero = () => {
       }}
       className='w-full flex flex-col items-center py-12 px-2 gap-4 text-center lg:min-h-[1050px]'>
       <h1 className='text-2xl font-extrabold leading-9 md:text-3xl lg:text-6xl'>
-        The Easisest Project <br /> Management Software
+        The Easiest Project <br /> Management Software
       </h1>
       <div className='flex flex-col items-center gap-4 lg:flex-col-reverse'>
         <HomeHeroImage />

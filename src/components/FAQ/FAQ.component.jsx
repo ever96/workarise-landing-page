@@ -16,7 +16,7 @@ export const FAQ = () => {
     },
     {
       question: "How much does Workarise cost?",
-      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, numquam modi facere laboriosam ut sunt tempore exercitationem eligendi rerum delectus provident, perferendis sit beatae laborum officia iure facilis nobis magni.",
+      answer: "We have three subscription plan, the Free version is pretty functional, Pro cost 6.99 monthly, and Teams is coming soon",
     },
     {
       question: "Can I cancel at any time?",
